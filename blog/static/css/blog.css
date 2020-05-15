@@ -1,0 +1,29 @@
+.page-header {
+    background-color: darkorange;
+    margin-top: 0;
+    padding: 20px 20px 20px 40px;
+}
+
+.content{
+    margin-left:40px;
+
+}
+
+.page-header h1 a{
+    color: white;
+    font-size: 36pt;
+    text-decoration: none;
+
+}
+
+.date{
+color: gray;
+}
+
+.post{
+    margin-bottom: 70px;
+}
+
+.post h2 a{
+    color: black;
+}
