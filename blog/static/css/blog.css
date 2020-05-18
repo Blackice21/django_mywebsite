@@ -27,3 +27,8 @@ color: gray;
 .post h2 a{
     color: black;
 }
+
+.post-form-blog textarea{
+    width :100%;
+}
+
