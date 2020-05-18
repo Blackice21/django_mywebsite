@@ -32,3 +32,9 @@ color: gray;
     width :100%;
 }
 
+.top-menu{
+    color: white;
+    font-size: 26pt;
+    float: right;
+    margin-right:40px;
+}
