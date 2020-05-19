@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>MY Blog</title>
+    <title>{% block title %} {%endblock%}</title>
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="{% static 'css/blog.css' %}">
@@ -16,6 +16,8 @@
     {% if user.is_authenticated %}
       <a href="{%url 'post_new'%}" class="top-menu" ><i class="fas fa-plus-square fa-2x" style="color:white;"></i></a>
       <a href="{% url 'post_drafts_list' %}" class="top-menu" ><i class="fas fa-edit fa-2x" style="color:white"></i></a>
+    {% else %}
+    <a href="{% url 'login' %}" class="top-menu"><button class="btn btn-primary">login</button></a>
     {% endif %}
     <h1><a href="{% url 'post_list' %}">Video-Game blog </a></h1>
 </div>
